@@ -1,0 +1,301 @@
+{
+    "code": 200,
+    "currentTime": 1526163511247,
+    "data": {
+        "limitExceeded": false,
+        "list": [
+            {
+                "code": "30160",
+                "direction": "W",
+                "id": "1_30160",
+                "lat": 47.523384,
+                "locationType": 0,
+                "lon": -122.276894,
+                "name": "S Henderson St & Renton Ave S",
+                "routeIds": [
+                    "1_100289",
+                    "1_100005",
+                    "1_100006"
+                ],
+                "wheelchairBoarding": "UNKNOWN"
+            },
+            {
+                "code": "30170",
+                "direction": "W",
+                "id": "1_30170",
+                "lat": 47.523292,
+                "locationType": 0,
+                "lon": -122.279518,
+                "name": "S Henderson St & Martin L King Jr Way S",
+                "routeIds": [
+                    "1_100006"
+                ],
+                "wheelchairBoarding": "UNKNOWN"
+            },
+            {
+                "code": "30171",
+                "direction": "S",
+                "id": "1_30171",
+                "lat": 47.522297,
+                "locationType": 0,
+                "lon": -122.281174,
+                "name": "Carkeek Dr S & 41st Ave S",
+                "routeIds": [
+                    "1_100006"
+                ],
+                "wheelchairBoarding": "UNKNOWN"
+            },
+            {
+                "code": "30190",
+                "direction": "N",
+                "id": "1_30190",
+                "lat": 47.518478,
+                "locationType": 0,
+                "lon": -122.283562,
+                "name": "39th Ave S & S Cambridge St",
+                "routeIds": [
+                    "1_100006"
+                ],
+                "wheelchairBoarding": "UNKNOWN"
+            },
+            {
+                "code": "30211",
+                "direction": "NW",
+                "id": "1_30211",
+                "lat": 47.522091,
+                "locationType": 0,
+                "lon": -122.28389,
+                "name": "39th Ave S & S Barton St",
+                "routeIds": [
+                    "1_100006"
+                ],
+                "wheelchairBoarding": "UNKNOWN"
+            },
+            {
+                "code": "30220",
+                "direction": "NW",
+                "id": "1_30220",
+                "lat": 47.523163,
+                "locationType": 0,
+                "lon": -122.285118,
+                "name": "Beacon Ave S & 38th Ave S",
+                "routeIds": [
+                    "1_100006"
+                ],
+                "wheelchairBoarding": "UNKNOWN"
+            },
+            {
+                "code": "30240",
+                "direction": "N",
+                "id": "1_30240",
+                "lat": 47.526371,
+                "locationType": 0,
+                "lon": -122.28759,
+                "name": "Beacon Ave S & S Cloverdale St",
+                "routeIds": [
+                    "1_100006"
+                ],
+                "wheelchairBoarding": "UNKNOWN"
+            },
+            {
+                "code": "31060",
+                "direction": "S",
+                "id": "1_31060",
+                "lat": 47.525883,
+                "locationType": 0,
+                "lon": -122.288025,
+                "name": "Beacon Ave S & S Cloverdale St",
+                "routeIds": [
+                    "1_100006"
+                ],
+                "wheelchairBoarding": "UNKNOWN"
+            },
+            {
+                "code": "31070",
+                "direction": "SE",
+                "id": "1_31070",
+                "lat": 47.523521,
+                "locationType": 0,
+                "lon": -122.286133,
+                "name": "Beacon Ave S & 37th Ave S",
+                "routeIds": [
+                    "1_100006"
+                ],
+                "wheelchairBoarding": "UNKNOWN"
+            },
+            {
+                "code": "31090",
+                "direction": "S",
+                "id": "1_31090",
+                "lat": 47.521069,
+                "locationType": 0,
+                "lon": -122.283768,
+                "name": "39th Ave S & S Barton St",
+                "routeIds": [
+                    "1_100006"
+                ],
+                "wheelchairBoarding": "UNKNOWN"
+            },
+            {
+                "code": "31111",
+                "direction": "S",
+                "id": "1_31111",
+                "lat": 47.518436,
+                "locationType": 0,
+                "lon": -122.283768,
+                "name": "39th Ave S & S Cambridge St",
+                "routeIds": [
+                    "1_100006"
+                ],
+                "wheelchairBoarding": "UNKNOWN"
+            },
+            {
+                "code": "31131",
+                "direction": "N",
+                "id": "1_31131",
+                "lat": 47.52269,
+                "locationType": 0,
+                "lon": -122.280815,
+                "name": "Carkeek Dr S & 41st Ave S",
+                "routeIds": [
+                    "1_100006"
+                ],
+                "wheelchairBoarding": "UNKNOWN"
+            },
+            {
+                "code": "31132",
+                "direction": "E",
+                "id": "1_31132",
+                "lat": 47.523251,
+                "locationType": 0,
+                "lon": -122.277878,
+                "name": "S Henderson St & Martin L King Jr Way S",
+                "routeIds": [
+                    "1_100005",
+                    "1_100006"
+                ],
+                "wheelchairBoarding": "UNKNOWN"
+            },
+            {
+                "code": "55578",
+                "direction": "N",
+                "id": "1_55578",
+                "lat": 47.522953,
+                "locationType": 0,
+                "lon": -122.279083,
+                "name": "Rainier Beach Station - Downtown",
+                "routeIds": [
+                    "40_100479"
+                ],
+                "wheelchairBoarding": "UNKNOWN"
+            },
+            {
+                "code": "55583",
+                "direction": "N",
+                "id": "1_55583",
+                "lat": 47.523655,
+                "locationType": 0,
+                "lon": -122.278793,
+                "name": "Martin L King Jr Way S & S Henderson St",
+                "routeIds": [
+                    "1_100289",
+                    "1_100005"
+                ],
+                "wheelchairBoarding": "UNKNOWN"
+            },
+            {
+                "code": "56173",
+                "direction": "S",
+                "id": "1_56173",
+                "lat": 47.522266,
+                "locationType": 0,
+                "lon": -122.279587,
+                "name": "Rainier Beach Station - Airport",
+                "routeIds": [
+                    "40_100479"
+                ],
+                "wheelchairBoarding": "UNKNOWN"
+            }
+        ],
+        "outOfRange": false,
+        "references": {
+            "agencies": [
+                {
+                    "disclaimer": "",
+                    "email": "",
+                    "fareUrl": "",
+                    "id": "1",
+                    "lang": "EN",
+                    "name": "Metro Transit",
+                    "phone": "206-553-3000",
+                    "privateService": false,
+                    "timezone": "America/Los_Angeles",
+                    "url": "http://metro.kingcounty.gov"
+                },
+                {
+                    "disclaimer": "",
+                    "email": "",
+                    "fareUrl": "",
+                    "id": "40",
+                    "lang": "EN",
+                    "name": "Sound Transit",
+                    "phone": "1-888-889-6368",
+                    "privateService": false,
+                    "timezone": "America/Los_Angeles",
+                    "url": "http://www.soundtransit.org"
+                }
+            ],
+            "routes": [
+                {
+                    "agencyId": "1",
+                    "color": "",
+                    "description": "Rainier Beach - Columbia City - Broadway",
+                    "id": "1_100289",
+                    "longName": "",
+                    "shortName": "9",
+                    "textColor": "",
+                    "type": 3,
+                    "url": "http://metro.kingcounty.gov/schedules/009/n0.html"
+                },
+                {
+                    "agencyId": "1",
+                    "color": "",
+                    "description": "Renton Transit Center - Skyway - Downtown Seattle",
+                    "id": "1_100005",
+                    "longName": "",
+                    "shortName": "106",
+                    "textColor": "",
+                    "type": 3,
+                    "url": "http://metro.kingcounty.gov/schedules/106/n0.html"
+                },
+                {
+                    "agencyId": "1",
+                    "color": "",
+                    "description": "Renton Transit Center - Rainier Beach",
+                    "id": "1_100006",
+                    "longName": "",
+                    "shortName": "107",
+                    "textColor": "",
+                    "type": 3,
+                    "url": "http://metro.kingcounty.gov/schedules/107/n0.html"
+                },
+                {
+                    "agencyId": "40",
+                    "color": "",
+                    "description": "LINK: SeaTac - Downtown Seattle - UW/Husky Stadium",
+                    "id": "40_100479",
+                    "longName": "",
+                    "shortName": "Link",
+                    "textColor": "",
+                    "type": 0,
+                    "url": "http://www.soundtransit.org/Schedules/ST-Express-Bus/599"
+                }
+            ],
+            "situations": [],
+            "stops": [],
+            "trips": []
+        }
+    },
+    "text": "OK",
+    "version": 2
+}

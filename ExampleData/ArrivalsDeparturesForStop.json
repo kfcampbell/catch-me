@@ -1,0 +1,560 @@
+{
+    "code": 200,
+    "currentTime": 1526163554367,
+    "data": {
+        "entry": {
+            "arrivalsAndDepartures": [
+                {
+                    "arrivalEnabled": true,
+                    "blockTripSequence": 10,
+                    "departureEnabled": true,
+                    "distanceFromStop": 3642.6809354678844,
+                    "frequency": null,
+                    "lastUpdateTime": 1526163441000,
+                    "numberOfStopsAway": 1,
+                    "predicted": true,
+                    "predictedArrivalInterval": null,
+                    "predictedArrivalTime": 1526163780000,
+                    "predictedDepartureInterval": null,
+                    "predictedDepartureTime": 1526163780000,
+                    "routeId": "40_100479",
+                    "routeLongName": "",
+                    "routeShortName": "Link",
+                    "scheduledArrivalInterval": null,
+                    "scheduledArrivalTime": 1526163780000,
+                    "scheduledDepartureInterval": null,
+                    "scheduledDepartureTime": 1526163780000,
+                    "serviceDate": 1526108400000,
+                    "situationIds": [],
+                    "status": "default",
+                    "stopId": "1_56173",
+                    "stopSequence": 12,
+                    "totalStopsInTrip": 16,
+                    "tripHeadsign": "Angle Lake Station",
+                    "tripId": "40_35031957",
+                    "tripStatus": {
+                        "activeTripId": "40_35031957",
+                        "blockTripSequence": 10,
+                        "closestStop": "1_56039",
+                        "closestStopTimeOffset": -58,
+                        "distanceAlongTrip": 14546.258396693564,
+                        "frequency": null,
+                        "lastKnownDistanceAlongTrip": 0,
+                        "lastKnownLocation": null,
+                        "lastKnownOrientation": 0,
+                        "lastLocationUpdateTime": 0,
+                        "lastUpdateTime": 1526163441000,
+                        "nextStop": "1_56159",
+                        "nextStopTimeOffset": 182,
+                        "orientation": 295.7659304398253,
+                        "phase": "in_progress",
+                        "position": {
+                            "lat": 47.55386358940003,
+                            "lon": -122.28937843361146
+                        },
+                        "predicted": true,
+                        "scheduleDeviation": 23,
+                        "scheduledDistanceAlongTrip": 14546.258396693564,
+                        "serviceDate": 1526108400000,
+                        "situationIds": [],
+                        "status": "SCHEDULED",
+                        "totalDistanceAlongTrip": 32367.217700303925,
+                        "vehicleId": "40_12"
+                    },
+                    "vehicleId": "40_12"
+                },
+                {
+                    "arrivalEnabled": true,
+                    "blockTripSequence": 10,
+                    "departureEnabled": true,
+                    "distanceFromStop": 9599.974559097376,
+                    "frequency": null,
+                    "lastUpdateTime": 1526163469000,
+                    "numberOfStopsAway": 5,
+                    "predicted": true,
+                    "predictedArrivalInterval": null,
+                    "predictedArrivalTime": 1526164385000,
+                    "predictedDepartureInterval": null,
+                    "predictedDepartureTime": 1526164385000,
+                    "routeId": "40_100479",
+                    "routeLongName": "",
+                    "routeShortName": "Link",
+                    "scheduledArrivalInterval": null,
+                    "scheduledArrivalTime": 1526164380000,
+                    "scheduledDepartureInterval": null,
+                    "scheduledDepartureTime": 1526164380000,
+                    "serviceDate": 1526108400000,
+                    "situationIds": [],
+                    "status": "default",
+                    "stopId": "1_56173",
+                    "stopSequence": 12,
+                    "totalStopsInTrip": 16,
+                    "tripHeadsign": "Angle Lake Station",
+                    "tripId": "40_35031958",
+                    "tripStatus": {
+                        "activeTripId": "40_35031958",
+                        "blockTripSequence": 10,
+                        "closestStop": "1_99101",
+                        "closestStopTimeOffset": -59,
+                        "distanceAlongTrip": 8587.735412169714,
+                        "frequency": null,
+                        "lastKnownDistanceAlongTrip": 0,
+                        "lastKnownLocation": null,
+                        "lastKnownOrientation": 0,
+                        "lastLocationUpdateTime": 0,
+                        "lastUpdateTime": 1526163469000,
+                        "nextStop": "1_99111",
+                        "nextStopTimeOffset": 61,
+                        "orientation": 269.8723547794007,
+                        "phase": "in_progress",
+                        "position": {
+                            "lat": 47.58598410677699,
+                            "lon": -122.3274122905686
+                        },
+                        "predicted": true,
+                        "scheduleDeviation": 50,
+                        "scheduledDistanceAlongTrip": 8587.735412169714,
+                        "serviceDate": 1526108400000,
+                        "situationIds": [],
+                        "status": "SCHEDULED",
+                        "totalDistanceAlongTrip": 32473.122699794614,
+                        "vehicleId": "40_1"
+                    },
+                    "vehicleId": "40_1"
+                },
+                {
+                    "arrivalEnabled": true,
+                    "blockTripSequence": 11,
+                    "departureEnabled": true,
+                    "distanceFromStop": 12905.509856713761,
+                    "frequency": null,
+                    "lastUpdateTime": 1526163429000,
+                    "numberOfStopsAway": 10,
+                    "predicted": true,
+                    "predictedArrivalInterval": null,
+                    "predictedArrivalTime": 1526164992000,
+                    "predictedDepartureInterval": null,
+                    "predictedDepartureTime": 1526164992000,
+                    "routeId": "40_100479",
+                    "routeLongName": "",
+                    "routeShortName": "Link",
+                    "scheduledArrivalInterval": null,
+                    "scheduledArrivalTime": 1526164980000,
+                    "scheduledDepartureInterval": null,
+                    "scheduledDepartureTime": 1526164980000,
+                    "serviceDate": 1526108400000,
+                    "situationIds": [],
+                    "status": "default",
+                    "stopId": "1_56173",
+                    "stopSequence": 12,
+                    "totalStopsInTrip": 16,
+                    "tripHeadsign": "Angle Lake Station",
+                    "tripId": "40_35031959",
+                    "tripStatus": {
+                        "activeTripId": "40_35031959",
+                        "blockTripSequence": 11,
+                        "closestStop": "1_1108",
+                        "closestStopTimeOffset": 13,
+                        "distanceAlongTrip": 5283.429475447687,
+                        "frequency": null,
+                        "lastKnownDistanceAlongTrip": 0,
+                        "lastKnownLocation": null,
+                        "lastKnownOrientation": 0,
+                        "lastLocationUpdateTime": 0,
+                        "lastUpdateTime": 1526163429000,
+                        "nextStop": "1_1108",
+                        "nextStopTimeOffset": 13,
+                        "orientation": 203.02329802897285,
+                        "phase": "in_progress",
+                        "position": {
+                            "lat": 47.61228700802652,
+                            "lon": -122.33518830877163
+                        },
+                        "predicted": true,
+                        "scheduleDeviation": 22,
+                        "scheduledDistanceAlongTrip": 5283.429475447687,
+                        "serviceDate": 1526108400000,
+                        "situationIds": [],
+                        "status": "SCHEDULED",
+                        "totalDistanceAlongTrip": 32367.217700303925,
+                        "vehicleId": "40_2"
+                    },
+                    "vehicleId": "40_2"
+                },
+                {
+                    "arrivalEnabled": true,
+                    "blockTripSequence": 8,
+                    "departureEnabled": true,
+                    "distanceFromStop": 18187.710612796887,
+                    "frequency": null,
+                    "lastUpdateTime": 0,
+                    "numberOfStopsAway": 12,
+                    "predicted": false,
+                    "predictedArrivalInterval": null,
+                    "predictedArrivalTime": 0,
+                    "predictedDepartureInterval": null,
+                    "predictedDepartureTime": 0,
+                    "routeId": "40_100479",
+                    "routeLongName": "",
+                    "routeShortName": "Link",
+                    "scheduledArrivalInterval": null,
+                    "scheduledArrivalTime": 1526165580000,
+                    "scheduledDepartureInterval": null,
+                    "scheduledDepartureTime": 1526165580000,
+                    "serviceDate": 1526108400000,
+                    "situationIds": [],
+                    "status": "default",
+                    "stopId": "1_56173",
+                    "stopSequence": 12,
+                    "totalStopsInTrip": 16,
+                    "tripHeadsign": "Angle Lake Station",
+                    "tripId": "40_35031960",
+                    "tripStatus": {
+                        "activeTripId": "40_35031832",
+                        "blockTripSequence": 7,
+                        "closestStop": "1_99604",
+                        "closestStopTimeOffset": 46,
+                        "distanceAlongTrip": 0,
+                        "frequency": null,
+                        "lastKnownDistanceAlongTrip": 0,
+                        "lastKnownLocation": null,
+                        "lastKnownOrientation": 0,
+                        "lastLocationUpdateTime": 0,
+                        "lastUpdateTime": 0,
+                        "nextStop": "1_99604",
+                        "nextStopTimeOffset": 46,
+                        "orientation": 94.39870535228148,
+                        "phase": "",
+                        "position": {
+                            "lat": 47.64970399423832,
+                            "lon": -122.30379499955679
+                        },
+                        "predicted": false,
+                        "scheduleDeviation": 0,
+                        "scheduledDistanceAlongTrip": 32488.890286598267,
+                        "serviceDate": 1526108400000,
+                        "situationIds": [],
+                        "status": "default",
+                        "totalDistanceAlongTrip": 32488.89092812808,
+                        "vehicleId": ""
+                    },
+                    "vehicleId": ""
+                }
+            ],
+            "nearbyStopIds": [
+                "1_31131",
+                "1_55578"
+            ],
+            "situationIds": [],
+            "stopId": "1_56173"
+        },
+        "references": {
+            "agencies": [
+                {
+                    "disclaimer": "",
+                    "email": "",
+                    "fareUrl": "",
+                    "id": "40",
+                    "lang": "EN",
+                    "name": "Sound Transit",
+                    "phone": "1-888-889-6368",
+                    "privateService": false,
+                    "timezone": "America/Los_Angeles",
+                    "url": "http://www.soundtransit.org"
+                },
+                {
+                    "disclaimer": "",
+                    "email": "",
+                    "fareUrl": "",
+                    "id": "1",
+                    "lang": "EN",
+                    "name": "Metro Transit",
+                    "phone": "206-553-3000",
+                    "privateService": false,
+                    "timezone": "America/Los_Angeles",
+                    "url": "http://metro.kingcounty.gov"
+                }
+            ],
+            "routes": [
+                {
+                    "agencyId": "40",
+                    "color": "",
+                    "description": "LINK: SeaTac - Downtown Seattle - UW/Husky Stadium",
+                    "id": "40_100479",
+                    "longName": "",
+                    "shortName": "Link",
+                    "textColor": "",
+                    "type": 0,
+                    "url": "http://www.soundtransit.org/Schedules/ST-Express-Bus/599"
+                },
+                {
+                    "agencyId": "1",
+                    "color": "",
+                    "description": "Lake City - Northgate TC - Downtown Seattle",
+                    "id": "1_100221",
+                    "longName": "",
+                    "shortName": "41",
+                    "textColor": "",
+                    "type": 3,
+                    "url": "http://metro.kingcounty.gov/schedules/041/n0.html"
+                },
+                {
+                    "agencyId": "1",
+                    "color": "",
+                    "description": "Sand Point - Downtown Seattle",
+                    "id": "1_100268",
+                    "longName": "",
+                    "shortName": "74",
+                    "textColor": "",
+                    "type": 3,
+                    "url": "http://metro.kingcounty.gov/schedules/074/n0.html"
+                },
+                {
+                    "agencyId": "1",
+                    "color": "",
+                    "description": "Renton Transit Center - Downtown Seattle",
+                    "id": "1_100003",
+                    "longName": "",
+                    "shortName": "101",
+                    "textColor": "",
+                    "type": 3,
+                    "url": "http://metro.kingcounty.gov/schedules/101/n0.html"
+                },
+                {
+                    "agencyId": "1",
+                    "color": "",
+                    "description": "Fairwood - Downtown Seattle",
+                    "id": "1_100487",
+                    "longName": "",
+                    "shortName": "102",
+                    "textColor": "",
+                    "type": 3,
+                    "url": "http://metro.kingcounty.gov/schedules/102/n0.html"
+                },
+                {
+                    "agencyId": "1",
+                    "color": "",
+                    "description": "Kent Station - Southcenter - Downtown Seattle",
+                    "id": "1_100045",
+                    "longName": "",
+                    "shortName": "150",
+                    "textColor": "",
+                    "type": 3,
+                    "url": "http://metro.kingcounty.gov/schedules/150/n0.html"
+                },
+                {
+                    "agencyId": "1",
+                    "color": "",
+                    "description": "Brickyard P&R - Kirkland TC - Downtown Seattle",
+                    "id": "1_100146",
+                    "longName": "",
+                    "shortName": "255",
+                    "textColor": "",
+                    "type": 3,
+                    "url": "http://metro.kingcounty.gov/schedules/255/n0.html"
+                },
+                {
+                    "agencyId": "1",
+                    "color": "",
+                    "description": "Renton Transit Center - Rainier Beach",
+                    "id": "1_100006",
+                    "longName": "",
+                    "shortName": "107",
+                    "textColor": "",
+                    "type": 3,
+                    "url": "http://metro.kingcounty.gov/schedules/107/n0.html"
+                }
+            ],
+            "situations": [],
+            "stops": [
+                {
+                    "code": "56173",
+                    "direction": "S",
+                    "id": "1_56173",
+                    "lat": 47.522266,
+                    "locationType": 0,
+                    "lon": -122.279587,
+                    "name": "Rainier Beach Station - Airport",
+                    "routeIds": [
+                        "40_100479"
+                    ],
+                    "wheelchairBoarding": "UNKNOWN"
+                },
+                {
+                    "code": "56039",
+                    "direction": "SE",
+                    "id": "1_56039",
+                    "lat": 47.558952,
+                    "locationType": 0,
+                    "lon": -122.292343,
+                    "name": "Columbia City Station - Airport",
+                    "routeIds": [
+                        "40_100479"
+                    ],
+                    "wheelchairBoarding": "UNKNOWN"
+                },
+                {
+                    "code": "56159",
+                    "direction": "SE",
+                    "id": "1_56159",
+                    "lat": 47.537529,
+                    "locationType": 0,
+                    "lon": -122.281471,
+                    "name": "Othello Station - Airport",
+                    "routeIds": [
+                        "40_100479"
+                    ],
+                    "wheelchairBoarding": "UNKNOWN"
+                },
+                {
+                    "code": "99101",
+                    "direction": "S",
+                    "id": "1_99101",
+                    "lat": 47.591812,
+                    "locationType": 0,
+                    "lon": -122.327354,
+                    "name": "Stadium Station - Airport",
+                    "routeIds": [
+                        "40_100479"
+                    ],
+                    "wheelchairBoarding": "UNKNOWN"
+                },
+                {
+                    "code": "99111",
+                    "direction": "S",
+                    "id": "1_99111",
+                    "lat": 47.579952,
+                    "locationType": 0,
+                    "lon": -122.327522,
+                    "name": "SODO Station - Airport",
+                    "routeIds": [
+                        "40_100479"
+                    ],
+                    "wheelchairBoarding": "UNKNOWN"
+                },
+                {
+                    "code": "1108",
+                    "direction": "SW",
+                    "id": "1_1108",
+                    "lat": 47.611393,
+                    "locationType": 0,
+                    "lon": -122.337509,
+                    "name": "Westlake Station - Bay C",
+                    "routeIds": [
+                        "1_100221",
+                        "1_100268",
+                        "1_100003",
+                        "1_100487",
+                        "1_100045",
+                        "1_100146",
+                        "40_100479"
+                    ],
+                    "wheelchairBoarding": "UNKNOWN"
+                },
+                {
+                    "code": "99604",
+                    "direction": "",
+                    "id": "1_99604",
+                    "lat": 47.649704,
+                    "locationType": 0,
+                    "lon": -122.303886,
+                    "name": "UW / Husky Stadium Link Station",
+                    "routeIds": [
+                        "40_100479"
+                    ],
+                    "wheelchairBoarding": "UNKNOWN"
+                },
+                {
+                    "code": "31131",
+                    "direction": "N",
+                    "id": "1_31131",
+                    "lat": 47.52269,
+                    "locationType": 0,
+                    "lon": -122.280815,
+                    "name": "Carkeek Dr S & 41st Ave S",
+                    "routeIds": [
+                        "1_100006"
+                    ],
+                    "wheelchairBoarding": "UNKNOWN"
+                },
+                {
+                    "code": "55578",
+                    "direction": "N",
+                    "id": "1_55578",
+                    "lat": 47.522953,
+                    "locationType": 0,
+                    "lon": -122.279083,
+                    "name": "Rainier Beach Station - Downtown",
+                    "routeIds": [
+                        "40_100479"
+                    ],
+                    "wheelchairBoarding": "UNKNOWN"
+                }
+            ],
+            "trips": [
+                {
+                    "blockId": "40_4917189",
+                    "directionId": "0",
+                    "id": "40_35031957",
+                    "routeId": "40_100479",
+                    "routeShortName": "",
+                    "serviceId": "1_8511",
+                    "shapeId": "1_21599013",
+                    "timeZone": "",
+                    "tripHeadsign": "Angle Lake Station",
+                    "tripShortName": "LOCAL"
+                },
+                {
+                    "blockId": "40_4917190",
+                    "directionId": "0",
+                    "id": "40_35031958",
+                    "routeId": "40_100479",
+                    "routeShortName": "",
+                    "serviceId": "1_8511",
+                    "shapeId": "1_21599015",
+                    "timeZone": "",
+                    "tripHeadsign": "Angle Lake Station",
+                    "tripShortName": "LOCAL"
+                },
+                {
+                    "blockId": "40_4917182",
+                    "directionId": "0",
+                    "id": "40_35031959",
+                    "routeId": "40_100479",
+                    "routeShortName": "",
+                    "serviceId": "1_8511",
+                    "shapeId": "1_21599013",
+                    "timeZone": "",
+                    "tripHeadsign": "Angle Lake Station",
+                    "tripShortName": "LOCAL"
+                },
+                {
+                    "blockId": "40_4917187",
+                    "directionId": "0",
+                    "id": "40_35031960",
+                    "routeId": "40_100479",
+                    "routeShortName": "",
+                    "serviceId": "1_8511",
+                    "shapeId": "1_21599015",
+                    "timeZone": "",
+                    "tripHeadsign": "Angle Lake Station",
+                    "tripShortName": "LOCAL"
+                },
+                {
+                    "blockId": "40_4917187",
+                    "directionId": "1",
+                    "id": "40_35031832",
+                    "routeId": "40_100479",
+                    "routeShortName": "",
+                    "serviceId": "1_8511",
+                    "shapeId": "1_10599020",
+                    "timeZone": "",
+                    "tripHeadsign": "University Of Washington Station",
+                    "tripShortName": "LOCAL"
+                }
+            ]
+        }
+    },
+    "text": "OK",
+    "version": 2
+}
