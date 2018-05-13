@@ -18,14 +18,40 @@ app.intent(
   'RainierBeachSouthIntent',
   {
     slots: {},
-    utterances: ['{|next train going south from rainier beach}']
+    utterances: ['{|next trains going south from rainier beach}']
   },
   (req, res) => {
     return getArrivalsDepartures('1_56173')
       .then(results => {
         console.log('results of get arrivals by stop', results);
         return res
-          .say(results)
+          .say(`light rail heading south from rainier beach: ${results}`)
+          .shouldEndSession(true)
+          .send();
+      })
+      .catch(error => {
+        console.log('something went wrong in get arrivals by stop', error.message);
+        return res.say(`something went wrong in get arrivals by stop. ${error.message}`);
+      });
+    return res
+      .say('why am i here?')
+      .shouldEndSession(true)
+      .send();
+  }
+);
+
+app.intent(
+  'RainierBeachNorthIntent',
+  {
+    slots: {},
+    utterances: ['{|next trains going north from rainier beach}']
+  },
+  (req, res) => {
+    return getArrivalsDepartures('1_55578')
+      .then(results => {
+        console.log('results of get arrivals by stop', results);
+        return res
+          .say(`light rail heading north from rainier beach: ${results}`)
           .shouldEndSession(true)
           .send();
       })
