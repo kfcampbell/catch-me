@@ -1,4 +1,5 @@
 const rp = require('request-promise');
+const API_KEY = require('../Keys');
 
 const getArrivalsDeparturesByStop = async stopId => {
   const query = `http://api.pugetsound.onebusaway.org/api/where/arrivals-and-departures-for-stop/${stopId}.json?key=TEST`;
