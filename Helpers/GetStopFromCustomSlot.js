@@ -1,30 +1,31 @@
 const _normalizeStopName = (stopName) => {
-    stopName = stopName.toLowerCase();
-    if (!stopName.includes('airport station')) {
-        stopName = stopName.replace('airport', '');
+    let normalizedStopName = stopName;
+    normalizedStopName = normalizedStopName.toLowerCase();
+    if (!normalizedStopName.includes('airport station')) {
+        normalizedStopName = normalizedStopName.replace('airport', '');
     }
-    stopName = stopName.replace('station', '');
-    stopName = stopName.replace('-', '');
-    stopName = stopName.replace('downtown', '');
-    stopName = stopName.replace('arrivals', '');
-    stopName = stopName.replace('bay', '');
-    stopName = stopName.replace('link', '');
-    stopName = stopName.replace('south', '');
-    stopName = stopName.replace('200th', '');
-    stopName = stopName.replace('&', '');
-    stopName = stopName.replace('/', '');
-    stopName = stopName.replace("\'", '');
-    stopName = stopName.trim();
-    return stopName;
+    normalizedStopName = normalizedStopName.replace('station', '');
+    normalizedStopName = normalizedStopName.replace('-', '');
+    normalizedStopName = normalizedStopName.replace('downtown', '');
+    normalizedStopName = normalizedStopName.replace('arrivals', '');
+    normalizedStopName = normalizedStopName.replace('bay', '');
+    normalizedStopName = normalizedStopName.replace('link', '');
+    normalizedStopName = normalizedStopName.replace('south', '');
+    normalizedStopName = normalizedStopName.replace('200th', '');
+    normalizedStopName = normalizedStopName.replace('&', '');
+    normalizedStopName = normalizedStopName.replace('/', '');
+    normalizedStopName = normalizedStopName.replace("\'", '');
+    normalizedStopName = normalizedStopName.trim();
+    return normalizedStopName;
 }
 
 const getStopFromCustomSlot = (slotValue, stops) => {
     console.log('getting slot name', slotValue, JSON.stringify(stops));
-    slotValue = _normalizeStopName(slotValue);
+    let normalizedSlotValue = _normalizeStopName(slotValue);
 
     for (let stop of stops) {
         stop.name = _normalizeStopName(stop.name);
-        if (stop.name.includes(slotValue)) {
+        if (stop.name.includes(normalizedSlotValue)) {
             console.log('matched stop', stop);
             return stop;
         }
