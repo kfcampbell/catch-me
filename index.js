@@ -15,6 +15,8 @@ let customStopSouth = { id: 1, name: 'test1' };
 
 app.launch((req, res) => {
   const prompt = `<audio src='https://s3.amazonaws.com/alaska-air-at-home/Airplane-ding-sound.mp3'/>Catch me if you can!`;
+
+  // todo: make default stop actually hit db
   return getDefaultStop(req.userId)
     .then((result) => {
       console.log('results of getting default stop', result);
@@ -109,8 +111,7 @@ app.intent('SetDefaultStopIntent', {
     if (req.slots.defaultStop.value) {
       defaultStop = req.slots.defaultStop.value;
 
-      // todo: wrapper that calls both north and southbound link routes.
-      // it will make a list of (stop, direction, id) objects
+      // todo: store custom stop in a dynamodb.
       // db table will look like: (userId, stopName, stopIdNorth, stopIdSouth)
 
       return getStopNamesAndIds('40_100479')

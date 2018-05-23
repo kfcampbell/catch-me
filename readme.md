@@ -7,5 +7,5 @@ To build, create a Keys.js file in the root directory of the project and export 
 Currently this is super quick and dirty. If you'd like to help out, PRs are appreciated!
 
 ## Problems/Opportunities
-    [] only routeId for sound transit (both directions not represented) (40_100479)
+    [x] only routeId for sound transit (both directions not represented) (40_100479)
     [] store user's preference in dynamodb or something
