@@ -1,5 +1,6 @@
 require('babel-polyfill');
 const { getArrivalsDepartures } = require('./Wrappers/GetArrivalsDeparturesWrapper');
+const { getStopNames } = require('./Wrappers/GetStopNames');
 
 module.change_code = 1;
 
@@ -65,6 +66,22 @@ app.intent(
       .send();
   }
 );
+
+// req.userId gets userId
+app.intent('DefaultStopSouthIntent', {
+  slots: {},
+  utterances: ['{|default stop}']
+},
+(req, res) => {
+  return getStopNames('40_100479').then(results => {
+    console.log('results of get stops per route', results);
+    return res.say('got some results!');
+  })
+  .catch(error => {
+    console.log('error in default stop south intent', error.message);
+    return res.say(`error in default stop south intent. ${error.message}`);
+  });
+});
 
 app.intent('AMAZON.StopIntent', {}, (req, res) => {
   const speechOutput = `<audio src='https://s3.amazonaws.com/alaska-air-at-home/Seatbeltsignoff.mp3'/>Good luck!`;
