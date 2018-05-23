@@ -13,8 +13,7 @@ const getStopInformation = async stopId => {
         };
         const response = await rp(options);
         if (response.statusCode < 300) {
-            console.log('response:', JSON.stringify(response));
-            const json = response.body.data; //.entry.name;
+            const json = response.body.data; 
             return json;
         }
         return 'Yeah uhh Keegan messed up...';

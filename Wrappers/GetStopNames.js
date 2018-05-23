@@ -1,20 +1,20 @@
 const { getStopsPerRoute } = require('../Services/GetStopsPerRoute');
 const { getStopInformation } = require('../Services/GetStopInformation');
 
-const getStopNames = async (routeId) => {
+const getStopNamesAndIds = async (routeIdSouth, routeIdNorth) => {
     try {
         const stopIds = await getStopsPerRoute(routeId);
-        const stopNames = [];
+        const stops = [];
         for (let stopId of stopIds) {
             const stopInformation = await getStopInformation(stopId);
             const stopName = stopInformation.entry.name;
-            stopNames.push(stopName);
+            stops.push({ id: stopId, name: stopName });
         }
-        return stopNames;
+        return stops;
     } catch (ex) {
         console.log('error getting stop names', ex.message);
         return [];
     }
 }
 
-module.exports = { getStopNames };
+module.exports = { getStopNamesAndIds };
