@@ -21,17 +21,13 @@ const setUserPreferences = async (userId, stopName, northBoundStopId, southBound
     }
   };
 
-  return docClient.put(params, (err, data) => {
-    if (err) {
-      console.error('Unable to add user', userId, '. Error JSON:', JSON.stringify(err, null, 2));
-      return false;
-    }
-    console.log('PutItem succeeded:', JSON.stringify(data));
-    return true;
-  });
+  const result = await docClient.put(params).promise();
+  if(result) {
+      return result;
+  }
+  throw new Error('Couldn\'t save user preferences!');
 };
 
-// this isn't working right now...
 const getUserPreferences = async userId => {
   AWS.config.update({
     region: 'us-east-1',
@@ -45,15 +41,13 @@ const getUserPreferences = async userId => {
       UserID: userId
     }
   };
-  return docClient.get(params, (err, data) => {
-    if (err) {
-      console.error('Failed to get user information', userId);
-      console.error('get error information', JSON.stringify(err));
-      return null;
-    }
-    console.log('successfully got information', JSON.stringify(data));
-    return data;
-  });
+
+  const result = await docClient.get(params).promise();
+  console.log('home stop information', result);
+  if (result) {
+    return result;
+  }
+  throw new Error('Couldn\'t find home stop');
 };
 
 // const updateUserPreferences = (userId, northBoundStopId, southBoundStopId) => null;

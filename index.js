@@ -17,27 +17,17 @@ let customStopSouth = { id: 1, name: 'test1' };
 app.launch((req, res) => {
   return getDefaultStop(req.userId)
     .then(data => {
-      console.log('results of getting default stop', data);
-      if (data) {
-        return res
-          .say(
-            'your default stop is ',
-            data.Item.stopName,
-            'you can say: alexa, ask catch me what the next train south'
-          )
-          .shouldEndSession(true);
-      }
+      customStopNorth = { id: data.Item.northBoundStopId, name: data.Item.stopName };
+      customStopSouth = { id: data.Item.SouthBoundStopId, name: data.Item.stopName };
       return res
-        .say(
-          'no default stop. you can set one by saying, for example: set my default stop to Rainier Beach'
-        )
+        .say(`your home stop is ${data.Item.stopName}. try asking: what's the next train south?`)
         .shouldEndSession(false);
     })
     .catch(error => {
       console.log('error getting default stop', error);
       return res
         .say(
-          'no default stop. you can set one by saying, for example: set my default stop to Rainier Beach'
+          "i couldn't find your home stop. you can set one by saying, for example: set my default stop to Rainier Beach."
         )
         .shouldEndSession(false);
     });
@@ -106,6 +96,7 @@ app.intent(
   }
 );
 
+// this is a train wreck. need to abstract some of this out to a wrapper and use a promise instead of then chains.
 app.intent(
   'SetDefaultStopIntent',
   {
