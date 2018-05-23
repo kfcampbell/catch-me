@@ -19,7 +19,6 @@ const _normalizeStopName = (stopName) => {
 }
 
 const getStopFromCustomSlot = (slotValue, stops) => {
-    // iterate through list (bottom to top) and find a matching stop.
     console.log('getting slot name', slotValue, JSON.stringify(stops));
     slotValue = _normalizeStopName(slotValue);
 

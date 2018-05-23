@@ -116,9 +116,7 @@ app.intent('SetDefaultStopIntent', {
       return getStopNamesAndIds('40_100479')
         .then((stops) => {
           const stop = getStopFromCustomSlot(defaultStop, stops);
-          console.log('custom stop', stop);
-          console.log('custom stop north', customStopNorth);
-          return res.say(`your stop is now set to ${stop.id} - ${stop.name}`).shouldEndSession(true);
+          return res.say(`your stop is now set to - ${stop.name}`).shouldEndSession(true);
         })
         .catch((error) => {
           console.log('error getting stop names and ids', ex.message);

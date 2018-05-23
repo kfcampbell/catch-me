@@ -13,9 +13,8 @@ const getStopsPerRoute = async routeId => {
         };
         const response = await rp(options);
         if (response.statusCode < 300) {
-            console.log('response:', JSON.stringify(response));
-            const json = response.body.data.entry.stopGroupings[0].stopGroups[0].stopIds;
-            return json;
+            console.log('stops to iterate through', JSON.stringify(response.body.data.references.stops));
+            return response.body.data.references.stops;
         }
         return 'Yeah uhh Keegan messed up...';
 

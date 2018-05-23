@@ -1,0 +1,473 @@
+[
+    {
+        "code": "1108",
+        "direction": "SW",
+        "id": "1_1108",
+        "lat": 47.611393,
+        "locationType": 0,
+        "lon": -122.337509,
+        "name": "Westlake Station - Bay C",
+        "routeIds": [
+            "1_100221",
+            "1_100268",
+            "1_100003",
+            "1_100487",
+            "1_100045",
+            "1_100146",
+            "40_100479"
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+    }
+    ,
+    {
+        "code": "1121",
+        "direction": "NE",
+        "id": "1_1121",
+        "lat": 47.611801,
+        "locationType": 0,
+        "lon": -122.335823,
+        "name": "Westlake Station - Bay A",
+        "routeIds": [
+            "1_100221",
+            "1_100268",
+            "1_100003",
+            "1_100487",
+            "1_100045",
+            "1_100146",
+            "40_100239",
+            "40_100479"
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+    }
+    ,
+    {
+        "code": "455",
+        "direction": "SE",
+        "id": "1_455",
+        "lat": 47.607246,
+        "locationType": 0,
+        "lon": -122.335754,
+        "name": "University St Station - Bay C",
+        "routeIds": [
+            "1_100221",
+            "1_100268",
+            "1_100003",
+            "1_100487",
+            "1_100045",
+            "1_100146",
+            "40_100479"
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+    }
+    ,
+    {
+        "code": "501",
+        "direction": "SE",
+        "id": "1_501",
+        "lat": 47.602139,
+        "locationType": 0,
+        "lon": -122.331055,
+        "name": "Pioneer Sq Station - Bay C",
+        "routeIds": [
+            "1_100221",
+            "1_100268",
+            "1_100003",
+            "1_100487",
+            "1_100045",
+            "1_100146",
+            "40_100479"
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+    }
+    ,
+    {
+        "code": "532",
+        "direction": "NW",
+        "id": "1_532",
+        "lat": 47.603199,
+        "locationType": 0,
+        "lon": -122.331581,
+        "name": "Pioneer Sq Station - Bay A",
+        "routeIds": [
+            "1_100221",
+            "1_100268",
+            "1_100003",
+            "1_100487",
+            "1_100045",
+            "1_100146",
+            "40_100239",
+            "40_100479"
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+    }
+    ,
+    {
+        "code": "55578",
+        "direction": "N",
+        "id": "1_55578",
+        "lat": 47.522953,
+        "locationType": 0,
+        "lon": -122.279083,
+        "name": "Rainier Beach Station - Downtown",
+        "routeIds": [
+            "40_100479"
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+    }
+    ,
+    {
+        "code": "55656",
+        "direction": "NW",
+        "id": "1_55656",
+        "lat": 47.538483,
+        "locationType": 0,
+        "lon": -122.281677,
+        "name": "Othello Station - Downtown",
+        "routeIds": [
+            "40_100479"
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+    }
+    ,
+    {
+        "code": "55778",
+        "direction": "NW",
+        "id": "1_55778",
+        "lat": 47.56028,
+        "locationType": 0,
+        "lon": -122.292892,
+        "name": "Columbia City Station - Downtown",
+        "routeIds": [
+            "40_100479"
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+    }
+    ,
+    {
+        "code": "55860",
+        "direction": "NW",
+        "id": "1_55860",
+        "lat": 47.576992,
+        "locationType": 0,
+        "lon": -122.297867,
+        "name": "Mt. Baker Station - Downtown",
+        "routeIds": [
+            "40_100479"
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+    }
+    ,
+    {
+        "code": "55949",
+        "direction": "SE",
+        "id": "1_55949",
+        "lat": 47.576439,
+        "locationType": 0,
+        "lon": -122.297737,
+        "name": "Mt. Baker Station - Airport",
+        "routeIds": [
+            "40_100479"
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+    }
+    ,
+    {
+        "code": "56039",
+        "direction": "SE",
+        "id": "1_56039",
+        "lat": 47.558952,
+        "locationType": 0,
+        "lon": -122.292343,
+        "name": "Columbia City Station - Airport",
+        "routeIds": [
+            "40_100479"
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+    }
+    ,
+    {
+        "code": "56159",
+        "direction": "SE",
+        "id": "1_56159",
+        "lat": 47.537529,
+        "locationType": 0,
+        "lon": -122.281471,
+        "name": "Othello Station - Airport",
+        "routeIds": [
+            "40_100479"
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+    }
+    ,
+    {
+        "code": "56173",
+        "direction": "S",
+        "id": "1_56173",
+        "lat": 47.522266,
+        "locationType": 0,
+        "lon": -122.279587,
+        "name": "Rainier Beach Station - Airport",
+        "routeIds": [
+            "40_100479"
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+    }
+    ,
+    {
+        "code": "565",
+        "direction": "NW",
+        "id": "1_565",
+        "lat": 47.608246,
+        "locationType": 0,
+        "lon": -122.336166,
+        "name": "University St Station - Bay A",
+        "routeIds": [
+            "1_100221",
+            "1_100268",
+            "1_100003",
+            "1_100487",
+            "1_100045",
+            "1_100146",
+            "40_100239",
+            "40_100479"
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+    }
+    ,
+    {
+        "code": "621",
+        "direction": "N",
+        "id": "1_621",
+        "lat": 47.59845,
+        "locationType": 0,
+        "lon": -122.32782,
+        "name": "Intl District Station - Bay A",
+        "routeIds": [
+            "1_100221",
+            "1_100268",
+            "1_100003",
+            "1_100487",
+            "1_100045",
+            "1_100146",
+            "40_100239",
+            "40_100479"
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+    }
+    ,
+    {
+        "code": "623",
+        "direction": "S",
+        "id": "1_623",
+        "lat": 47.59766,
+        "locationType": 0,
+        "lon": -122.328217,
+        "name": "Intl District Station - Bay C",
+        "routeIds": [
+            "1_100221",
+            "1_100268",
+            "1_100003",
+            "1_100487",
+            "1_100045",
+            "1_100146",
+            "40_100479"
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+    }
+    ,
+    {
+        "code": "99101",
+        "direction": "S",
+        "id": "1_99101",
+        "lat": 47.591812,
+        "locationType": 0,
+        "lon": -122.327354,
+        "name": "Stadium Station - Airport",
+        "routeIds": [
+            "40_100479"
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+    }
+    ,
+    {
+        "code": "99111",
+        "direction": "S",
+        "id": "1_99111",
+        "lat": 47.579952,
+        "locationType": 0,
+        "lon": -122.327522,
+        "name": "SODO Station - Airport",
+        "routeIds": [
+            "40_100479"
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+    }
+    ,
+    {
+        "code": "99121",
+        "direction": "E",
+        "id": "1_99121",
+        "lat": 47.579124,
+        "locationType": 0,
+        "lon": -122.311279,
+        "name": "Beacon Hill Station - Airport",
+        "routeIds": [
+            "40_100479"
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+    }
+    ,
+    {
+        "code": "99240",
+        "direction": "W",
+        "id": "1_99240",
+        "lat": 47.579678,
+        "locationType": 0,
+        "lon": -122.311401,
+        "name": "Beacon Hill Station - Downtown",
+        "routeIds": [
+            "40_100479"
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+    }
+    ,
+    {
+        "code": "99256",
+        "direction": "N",
+        "id": "1_99256",
+        "lat": 47.580589,
+        "locationType": 0,
+        "lon": -122.327263,
+        "name": "SODO Station - Downtown",
+        "routeIds": [
+            "40_100479"
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+    }
+    ,
+    {
+        "code": "99260",
+        "direction": "",
+        "id": "1_99260",
+        "lat": 47.592281,
+        "locationType": 0,
+        "lon": -122.326988,
+        "name": "Stadium Station - Downtown",
+        "routeIds": [
+            "40_100479"
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+    }
+    ,
+    {
+        "code": "99603",
+        "direction": "N",
+        "id": "1_99603",
+        "lat": 47.619629,
+        "locationType": 0,
+        "lon": -122.320038,
+        "name": "Capitol Hill Link Station",
+        "routeIds": [
+            "40_100479"
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+    }
+    ,
+    {
+        "code": "99604",
+        "direction": "",
+        "id": "1_99604",
+        "lat": 47.649704,
+        "locationType": 0,
+        "lon": -122.303886,
+        "name": "UW / Husky Stadium Link Station",
+        "routeIds": [
+            "40_100479"
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+    }
+    ,
+    {
+        "code": "99610",
+        "direction": "S",
+        "id": "1_99610",
+        "lat": 47.61956,
+        "locationType": 0,
+        "lon": -122.320389,
+        "name": "Capitol Hill Link Station",
+        "routeIds": [
+            "40_100479"
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+    }
+    ,
+    {
+        "code": "99900",
+        "direction": "W",
+        "id": "1_99900",
+        "lat": 47.464272,
+        "locationType": 0,
+        "lon": -122.288399,
+        "name": "Tukwila Int'l Blvd Station - Airport",
+        "routeIds": [
+            "40_100479"
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+    }
+    ,
+    {
+        "code": "99903",
+        "direction": "N",
+        "id": "1_99903",
+        "lat": 47.445053,
+        "locationType": 0,
+        "lon": -122.296692,
+        "name": "Airport Station - To Downtown",
+        "routeIds": [
+            "40_100479"
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+    }
+    ,
+    {
+        "code": "99904",
+        "direction": "S",
+        "id": "1_99904",
+        "lat": 47.444969,
+        "locationType": 0,
+        "lon": -122.297028,
+        "name": "Airport Station - Arrivals",
+        "routeIds": [
+            "40_100479"
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+    }
+    ,
+    {
+        "code": "99905",
+        "direction": "E",
+        "id": "1_99905",
+        "lat": 47.463924,
+        "locationType": 0,
+        "lon": -122.288002,
+        "name": "Tukwila Int'l Blvd Station - Downtown",
+        "routeIds": [
+            "40_100479"
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+    }
+    ,
+    {
+        "code": "99913",
+        "direction": "",
+        "id": "1_99913",
+        "lat": 47.423122,
+        "locationType": 0,
+        "lon": -122.297615,
+        "name": "Angle Lake Link Station & S 200th St",
+        "routeIds": [
+            "40_100479"
+        ],
+        "wheelchairBoarding": "UNKNOWN"
+    }
+    ]
