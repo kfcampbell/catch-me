@@ -2,7 +2,8 @@ require('babel-polyfill');
 const util = require('util');
 const Alexa = require('alexa-app');
 const { getDefaultStop } = require('./Services/GetDefaultStop');
-const { getArrivalsDepartures } = require('./Wrappers/GetArrivalsDeparturesWrapper');
+const { getScheduleForStop } = require('./Wrappers/GetScheduleForStop');
+const { getArrivalsDepartures } = require('./Wrappers/GetArrivalsDepartures');
 const { getStopNamesAndIds } = require('./Wrappers/GetStopNames');
 const { getStopFromCustomSlot } = require('./Helpers/GetStopFromCustomSlot');
 const { setUserPreferences } = require('./Repositories/UserInteraction');
@@ -29,67 +30,15 @@ app.launch((req, res) => {
 });
 
 app.intent(
-  'RainierBeachSouthIntent',
-  {
-    slots: {},
-    utterances: ['{|next trains going south from rainier beach}']
-  },
-  (req, res) =>
-    getArrivalsDepartures('1_56173')
-      .then(results => {
-        console.log('results of get arrivals by stop south rainier beach', results);
-        return res
-          .say(`light rail heading south from rainier beach: ${results}`)
-          .shouldEndSession(true)
-          .send();
-      })
-      .catch(error => {
-        console.log('something went wrong in get arrivals by stop', error.message);
-        return res.say(`something went wrong in get arrivals by stop. ${error.message}`);
-      })
-);
-
-app.intent(
-  'RainierBeachNorthIntent',
-  {
-    slots: {},
-    utterances: ['{|next trains going north from rainier beach}']
-  },
-  (req, res) => {
-    return getArrivalsDepartures('1_55578')
-      .then(results => {
-        console.log('results of get arrivals by stop north rainier beach', results);
-        return res
-          .say(`light rail heading north from rainier beach: ${results}`)
-          .shouldEndSession(true)
-          .send();
-      })
-      .catch(error => {
-        console.log('something went wrong in get arrivals by stop', error.message);
-        return res.say(`something went wrong in get arrivals by stop. ${error.message}`);
-      });
-  }
-);
-
-app.intent(
   'DefaultStopSouthIntent',
   {
     slots: {},
     utterances: ['{|train south}']
   },
   (req, res) => {
-    return getDefaultStop(req.userId)
-      .then(stop => {
-        console.log('default stop', stop);
-        const southBoundStopId = stop.Item.southBoundStopId;
-        return getArrivalsDepartures(southBoundStopId)
-          .then(results => {
-            return res.say(`trains heading south from ${stop.Item.stopName}: ${results}`).shouldEndSession(true).send();
-          })
-          .catch(error => {
-            console.log('error in default stop south intent', error.message);
-            return res.say(`error in default stop south intent. ${error.message}`);
-          })
+    return getScheduleForStop(req.userId, false)
+      .then(results => {
+        return res.say(results).shouldEndSession(true).send();
       })
       .catch(error => {
         console.log('error in default stop south intent', error.message);
@@ -105,28 +54,19 @@ app.intent(
     utterances: ['{|train north}']
   },
   (req, res) => {
-    return getDefaultStop(req.userId)
-      .then(stop => {
-        console.log('default stop', stop);
-        const northBoundStopId = stop.Item.northBoundStopId;
-        return getArrivalsDepartures(northBoundStopId)
-          .then(results => {
-            return res.say(`trains heading north from ${stop.Item.stopName}: ${results}`).shouldEndSession(true).send();
-          })
-          .catch(error => {
-            console.log('error in default stop north intent', error.message);
-            return res.say(`error in default stop north intent. ${error.message}`);
-          })
+    return getScheduleForStop(req.userId, true)
+      .then(results => {
+        return res.say(results).shouldEndSession(true).send();
       })
       .catch(error => {
-        console.log('error in default stop north intent', error.message);
-        return res.say(`error in default stop north intent. ${error.message}`);
+        console.log('error in default stop south intent', error.message);
+        return res.say(`error in default stop south intent. ${error.message}`);
       });
   }
 );
 
 
-// this is a train wreck. need to abstract some of this out to a wrapper and use a promise instead of then chains.
+// this is a train wreck. need to abstract some of this out to a wrapper and use a single promise instead of all these chains.
 app.intent(
   'SetDefaultStopIntent',
   {

@@ -8,4 +8,5 @@ Currently this is super quick and dirty. If you'd like to help out, PRs are appr
 
 ## Problems/Opportunities
     [x] only routeId for sound transit (both directions not represented) (40_100479)
-    [] store user's preference in dynamodb or something
+    [x] store user's preference in dynamodb or something
+    [] support asking for train times for arbitrary stops
