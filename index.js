@@ -11,14 +11,9 @@ const app = new Alexa.app('catch-me'); // eslint-disable-line
 
 module.change_code = 1;
 
-let customStopNorth = { id: 0, name: 'test0' };
-let customStopSouth = { id: 1, name: 'test1' };
-
 app.launch((req, res) => {
   return getDefaultStop(req.userId)
     .then(data => {
-      customStopNorth = { id: data.Item.northBoundStopId, name: data.Item.stopName };
-      customStopSouth = { id: data.Item.SouthBoundStopId, name: data.Item.stopName };
       return res
         .say(`your home stop is ${data.Item.stopName}. try asking: what's the next train south?`)
         .shouldEndSession(false);
@@ -42,7 +37,7 @@ app.intent(
   (req, res) =>
     getArrivalsDepartures('1_56173')
       .then(results => {
-        console.log('results of get arrivals by stop', results);
+        console.log('results of get arrivals by stop south rainier beach', results);
         return res
           .say(`light rail heading south from rainier beach: ${results}`)
           .shouldEndSession(true)
@@ -63,7 +58,7 @@ app.intent(
   (req, res) => {
     return getArrivalsDepartures('1_55578')
       .then(results => {
-        console.log('results of get arrivals by stop', results);
+        console.log('results of get arrivals by stop north rainier beach', results);
         return res
           .say(`light rail heading north from rainier beach: ${results}`)
           .shouldEndSession(true)
@@ -80,14 +75,21 @@ app.intent(
   'DefaultStopSouthIntent',
   {
     slots: {},
-    utterances: ['{|default stop}']
+    utterances: ['{|train south}']
   },
   (req, res) => {
-    console.log('userId', req.userId);
-    return getStopNamesAndIds('40_100479')
-      .then(results => {
-        console.log('results of get stops per route', results);
-        return res.say('got some results!');
+    return getDefaultStop(req.userId)
+      .then(stop => {
+        console.log('default stop', stop);
+        const southBoundStopId = stop.Item.southBoundStopId;
+        return getArrivalsDepartures(southBoundStopId)
+          .then(results => {
+            return res.say(`trains heading south from ${stop.Item.stopName}: ${results}`).shouldEndSession(true).send();
+          })
+          .catch(error => {
+            console.log('error in default stop south intent', error.message);
+            return res.say(`error in default stop south intent. ${error.message}`);
+          })
       })
       .catch(error => {
         console.log('error in default stop south intent', error.message);
@@ -95,6 +97,34 @@ app.intent(
       });
   }
 );
+
+app.intent(
+  'DefaultStopNorthIntent',
+  {
+    slots: {},
+    utterances: ['{|train north}']
+  },
+  (req, res) => {
+    return getDefaultStop(req.userId)
+      .then(stop => {
+        console.log('default stop', stop);
+        const northBoundStopId = stop.Item.northBoundStopId;
+        return getArrivalsDepartures(northBoundStopId)
+          .then(results => {
+            return res.say(`trains heading north from ${stop.Item.stopName}: ${results}`).shouldEndSession(true).send();
+          })
+          .catch(error => {
+            console.log('error in default stop north intent', error.message);
+            return res.say(`error in default stop north intent. ${error.message}`);
+          })
+      })
+      .catch(error => {
+        console.log('error in default stop north intent', error.message);
+        return res.say(`error in default stop north intent. ${error.message}`);
+      });
+  }
+);
+
 
 // this is a train wreck. need to abstract some of this out to a wrapper and use a promise instead of then chains.
 app.intent(

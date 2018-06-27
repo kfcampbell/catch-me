@@ -19,7 +19,6 @@ const buildStops = (givenStops, routeId) => {
         let stopHasNotBeenAdded = true;
         const currStopNameParts = stop.name.split(' ');
         const currStopName = `${currStopNameParts[0]} ${currStopNameParts[1]}`;
-        console.log('stop info', stop);
         if (stop.routeIds.includes(routeId)) {
             for (let existingStop of stops) {
                 if (existingStop.name.includes(currStopName)) {
@@ -42,7 +41,6 @@ const buildStops = (givenStops, routeId) => {
             }
         }
     }
-    console.log('edited list of stops', stops);
     return stops;
 };
 
